@@ -199,7 +199,7 @@ async function connectToWhatsApp() {
       const now = Date.now();
       const lastTime = lastAutoReplyTime[from] || 0;
       if (now - lastTime > 1800000) {
-        const autoReplyMenu = `Dulina Hansaka මේ මොහොතේ කාර්යබහුලයි📵. ඔබ පැමිණි කාරණය කෙටියෙන් ඉදිරිපත් කරන්න. මම චමත්ගේ සහායක බොට් (Dulina's Bot Assistant) 🤖.\n\nඔබ පැමිණියේ:🚀 \n1️⃣. Results ඇසීමට නම් ⚠️ - (1)\n2️⃣. පෞද්ගලික යමක් කතා කිරීමට නම් - (2)\n3️⃣. වෙනත් දෙයක් කතා කිරීමට නම් - (3)\n\nකරුණාකර අදාළ අංකය ඇතුළත් කර එවන්න.🔢\n\n🤖_Dulina's Bot Assistant_\n© Powered by 🔰*Chamath N Dissanayake*`;
+        const autoReplyMenu = `Dulina Hansaka මේ මොහොතේ කාර්යබහුලයි📵. ඔබ පැමිණි කාරණය කෙටියෙන් ඉදිරිපත් කරන්න. මම දුලින ගේ සහායක බොට් (Dulina's Bot Assistant) 🤖.\n\nඔබ පැමිණියේ:🚀 \n1️⃣. Results ඇසීමට නම් ⚠️ - (1)\n2️⃣. පෞද්ගලික යමක් කතා කිරීමට නම් - (2)\n3️⃣. වෙනත් දෙයක් කතා කිරීමට නම් - (3)\n\nකරුණාකර අදාළ අංකය ඇතුළත් කර එවන්න.🔢\n\n🤖_Dulina's Bot Assistant_\n© Powered by 🔰*Chamath N Dissanayake*`;
         await sock.sendMessage(from, { text: autoReplyMenu }, { quoted: msg });
         lastAutoReplyTime[from] = now;
       }
